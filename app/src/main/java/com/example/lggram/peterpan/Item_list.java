@@ -20,7 +20,7 @@ public class Item_list extends AppCompatActivity {
         setContentView(R.layout.item_list);
         listView= (ListView) findViewById(R.id.listView); //리스트 뷰 객체 생성
         adapter = new PackageAdapter();
-        adapter.addItems(new PackageItem("둘레길 걷기","김수완","화악산", 0x7f060001 ));
+        adapter.addItems(new PackageItem("둘레길 걷기","김수완","화악산", R.drawable.doole));
         adapter.addItems(new PackageItem("제주도 올레길","노재영","제주도공항", R.drawable.b ));
         adapter.addItems(new PackageItem("도자기 공예 원데이","박상현","인사동", R.drawable.b ));
         adapter.addItems(new PackageItem("도시와 농촌의 즐거움","류요선","일산역", R.drawable.b ));

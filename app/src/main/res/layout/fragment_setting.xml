@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                app:rv_rippleDuration="100">
+
+                <com.yj.kakao.afeel.common.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user1" />
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="임블리"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:text="010-1234-5678"
+                android:textColor="#444" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="29 직장인 여"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="보유 포인트"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/main_color_dark"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:text="2,000P"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/main_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="매칭권"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:background="@color/main_color_dark"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:text="2016.08.25까지"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_ideal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            app:rv_color="#212F3B"
+            app:rv_rippleDuration="100"
+            app:rv_type="doubleRipple">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_ideal" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/rv_ideal"
+            app:rv_color="#212F3B"
+            app:rv_rippleDuration="100"
+            app:rv_type="doubleRipple">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_setting" />
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#c6c6c6" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="공지사항"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_mycard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="내 카드 보기"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.andexert.library.RippleView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:rv_color="#212F3B"
+                    app:rv_rippleDuration="100">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingEnd="24dp"
+                        android:paddingStart="24dp"
+                        android:paddingTop="12dp"
+                        android:text="알림설정"
+                        android:textColor="#444"
+                        android:textSize="16sp" />
+                </com.andexert.library.RippleView>
+
+                <me.xiaopan.switchbutton.SwitchButton
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="24dp"
+                    android:text=""
+                    app:frameDrawable="@drawable/switch_frame"
+                    app:sliderDrawable="@drawable/selector_switch_slider"
+                    app:stateDrawable="@drawable/selector_switch_state"
+                    app:stateMaskDrawable="@drawable/switch_state_mask"
+                    app:withTextInterval="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_non_matching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="비매칭 번호 등록"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="고객센터"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="개인정보 취급방침"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="이용약관"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="어필소개"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="이용안내"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="휴면계정"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="로그아웃"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="#c6c6c6" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/rv_signout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_color="#212F3B"
+                app:rv_rippleDuration="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_grey"
+                    android:paddingBottom="12dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="12dp"
+                    android:text="계정 탈퇴"
+                    android:textColor="#444"
+                    android:textSize="16sp" />
+            </com.andexert.library.RippleView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c6c6c6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f4f4f4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

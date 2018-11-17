@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "904419057601",
+    "firebase_url": "https://afeel-cb465.firebaseio.com",
+    "project_id": "afeel-cb465",
+    "storage_bucket": "afeel-cb465.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904419057601:android:16ca3ed47fd302ff",
+        "android_client_info": {
+          "package_name": "com.yj.kakao.afeel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904419057601-6439m53jssn4m2beli5cs6l92rkfuted.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdYAoI62-_gtHfgg9vzdLX-5Av9cQ2nRk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

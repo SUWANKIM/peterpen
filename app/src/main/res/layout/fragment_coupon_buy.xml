@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="스토어"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/imv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_rippleDuration="100"
+            app:rv_type="doubleRipple">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:src="@drawable/icon_back" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            app:rv_rippleDuration="100">
+
+            <TextView
+                android:id="@+id/tv_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/xml_rounded_10_main_color_dark_bg"
+                android:drawablePadding="3dp"
+                android:drawableStart="@drawable/ic_white_heart"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="20"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/iv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            app:rv_rippleDuration="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_receive" />
+
+            <com.yj.kakao.afeel.common.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10px"
+                android:src="@drawable/img_coupon" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/good_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="보석"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이 카드를"
+                android:textColor="#444"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="4명"
+                android:textColor="@color/main_color"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이 구매하였습니다."
+                android:textColor="#444"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B2E9E9" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9F7F7"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:rv_rippleDuration="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_fill_red"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="구매하기"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_fill_grey"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="구매완료"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_red_heart_1"
+            android:text="150"
+            android:textColor="#FF5C6A"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

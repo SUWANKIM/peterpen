@@ -1,0 +1,498 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="프로필"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/imv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_rippleDuration="100"
+            app:rv_type="doubleRipple">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:src="@drawable/icon_back" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            app:rv_rippleDuration="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/xml_rounded_10_main_color_dark_bg"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="신고하기"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+
+    <com.yj.kakao.afeel.common.HorizontalListView
+        android:id="@+id/hlvSimpleList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:divider="#fff"
+        android:fadingEdgeLength="5dp"
+        android:requiresFadingEdge="horizontal"
+        app:dividerWidth="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <RelativeLayout
+                android:id="@+id/rly_info"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/profile_info_back"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="임블리"
+                            android:textColor="@color/main_color_dark"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="29 / 서울 / 직장인 / A형 / 무교"
+                            android:textColor="#444"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        app:rv_rippleDuration="100">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/xml_rounded_10_main_bg"
+                            android:paddingBottom="3dp"
+                            android:paddingEnd="12dp"
+                            android:paddingStart="12dp"
+                            android:paddingTop="3dp"
+                            android:text="010-1234-5678"
+                            android:textColor="#fff"
+                            android:textSize="16sp" />
+                    </com.andexert.library.RippleView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="임블리"
+                        android:textColor="@color/main_color_dark"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_nick"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="29 / 서울 / 직장인 / A형 / 무교"
+                        android:textColor="#444"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    app:rv_rippleDuration="100"
+                    app:rv_type="doubleRipple">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_message" />
+                </com.andexert.library.RippleView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/xml_border_white_bg"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="키"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="166cm"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="학교"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="서울대학교"
+                        android:textColor="#444" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/match_red"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="인증"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="직장"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="삼성전자"
+                        android:textColor="#444" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/match_red"
+                        android:paddingBottom="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="인증"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="취미"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="야구응원"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="성격"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="매우 활발"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="관심사"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="두산베어스, 영화"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="외모/스타일"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="귀요미"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="자랑거리"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="우리동네 얼짱 출신"
+                        android:textColor="#444" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="이런 연애"
+                        android:textColor="@color/match_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="같이 두산베어스 응원할 수 있는 분을 원해요."
+                        android:textColor="#444" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/xml_border_white_bg"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="자기소개"
+                    android:textColor="@color/match_red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="안녕하세요~^^ 저는 화학공학과를 졸업하고 현재 S기업에 서 재직중입니다. 평소에는 영화나 드라이브를 좋아하고 솔직한 성격이예요~ 대화 나누면서 서로 알아갔으면 좋겠어요^^"
+                    android:textColor="#444" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_send_x"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_grey"
+            app:rv_rippleDuration="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_white_x" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_send_o"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/match_red"
+            app:rv_rippleDuration="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_white_o" />
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/match_red"
+        android:visibility="gone"
+        app:rv_rippleDuration="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/match_red"
+            android:gravity="center"
+            android:text="연락처보기"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </com.andexert.library.RippleView>
+</LinearLayout>

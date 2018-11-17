@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">어필</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="app_finish_message">"'뒤로' 버튼을 한번 더 누르면 종료됩니다."</string>
-    <string name="image_max_size_limit_msg">메모리 용량이 5MB이상이여야 합니다.</string>
-    <string name="title_activity_test">TestActivity</string>
-</resources>

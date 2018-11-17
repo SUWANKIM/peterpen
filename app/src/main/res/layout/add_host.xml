@@ -20,20 +20,50 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/TextView"
+                    android:id="@+id/TextView7"
+                    android:layout_width="98dp"
+                    android:layout_height="49dp"
+                    android:layout_weight="1"
+                    android:text="타이틀(*)" />
+
+                <EditText
+                    android:id="@+id/Title"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="타이틀" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="프로그램이름을 적어주세요" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView1"
                     android:layout_width="98dp"
                     android:layout_height="49dp"
                     android:layout_weight="1"
                     android:text="Host명(*)" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/hostname"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="host명" />
             </LinearLayout>
 
             <TextView
@@ -50,20 +80,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/TextView"
+                    android:id="@+id/realname"
                     android:layout_width="98dp"
                     android:layout_height="49dp"
                     android:layout_weight="1"
                     android:text="Host이름(*)" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/editText4"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="host이름" />
             </LinearLayout>
 
             <TextView
@@ -80,20 +110,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/TextView"
+                    android:id="@+id/TextView5"
                     android:layout_width="98dp"
                     android:layout_height="49dp"
                     android:layout_weight="1"
                     android:text="개인연락처(*)" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/tel1"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="개인연락처" />
             </LinearLayout>
 
             <TextView
@@ -110,20 +140,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/TextView"
+                    android:id="@+id/TextView6"
                     android:layout_width="98dp"
                     android:layout_height="49dp"
                     android:layout_weight="1"
                     android:text="집결지연락처" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/tel2"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="집결자연락처" />
             </LinearLayout>
 
             <TextView
@@ -140,20 +170,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/TextView"
+                    android:id="@+id/TextView8"
                     android:layout_width="98dp"
                     android:layout_height="49dp"
                     android:layout_weight="1"
                     android:text="이메일(*)" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/email"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="이메일" />
             </LinearLayout>
 
             <TextView
@@ -177,13 +207,13 @@
                     android:text="주소(*)" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/address"
                     android:layout_width="182dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="주소" />
             </LinearLayout>
 
             <TextView
@@ -198,7 +228,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="저장" />
+                android:text="저장"
+                android:onClick="ClickedButton"/>
 
         </LinearLayout>
     </ScrollView>

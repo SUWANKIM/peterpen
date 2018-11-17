@@ -40,9 +40,7 @@ public class PackageItemView extends LinearLayout {
     public void setInfo(String info){
         textView2.setText(info);
     }
-    public void setPrice(int price){
-        textView3.setText(String.valueOf(price));
-    }
+    public void setPrice(String price){ textView3.setText(price); }
     public void setImage(int resId){
         imageView.setImageResource(resId);
     }

@@ -16,38 +16,31 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class Menu_1 extends AppCompatActivity {
+    public static final int REQUEST_CODE_MENU =101;
     ListView listView;
-    PackageAdapter adapter;
+    //PackageAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.experience_categories);
         listView= (ListView) findViewById(R.id.listView); //리스트 뷰 객체 생성
-        adapter = new PackageAdapter();
-        adapter.addItems(new PackageItem("같이가용","졸라리재밌는여행",100000, 0x7f060001 ));
-        adapter.addItems(new PackageItem("같이가2용","졸라리재밌는여행",100000, R.drawable.b ));
-        listView.setAdapter(adapter);
+        //adapter = new PackageAdapter();
+        //adapter.addItems(new PackageItem("같이가용","졸라리재밌는여행",100000, 0x7f060001 ));
+        //adapter.addItems(new PackageItem("같이가2용","졸라리재밌는여행",100000, R.drawable.b ));
+        //listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                PackageItem item = (PackageItem)adapter.getItem(position);
-                Toast.makeText(getApplicationContext(),"선택"+item.getName(),Toast.LENGTH_LONG).show();
-            }
-        });
+        //listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //    @Override
+        //    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        //        PackageItem item = (PackageItem)adapter.getItem(position);
+        //        Toast.makeText(getApplicationContext(),"선택"+item.getName(),Toast.LENGTH_LONG).show();
+        //    }
+        //});
     }
 
-    @Override
-    public void onBackPressed(){
-        Intent intent = new Intent();
-        intent.putExtra("name","mike");
-        setResult(RESULT_OK,intent);
-        finish();
-        super.onBackPressed();
-    }
 
-    class PackageAdapter extends BaseAdapter {
+    /*class PackageAdapter extends BaseAdapter {
         ArrayList<PackageItem> items = new ArrayList<PackageItem>();
 
         @Override
@@ -72,12 +65,36 @@ public class Menu_1 extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup viewGroup){
             PackageItemView view = new PackageItemView(getApplicationContext());
             PackageItem item = items.get(position);
+            //Host host = new Host(getApplicationContext());
             view.setName(item.getName());
             view.setInfo(item.getInfo());
             view.setPrice(item.getPrice());
             view.setImage(item.getResId());
 
             return view;
+        }
+    }*/
+
+    public void onClickedImageButton(View v){
+        Intent intent = new Intent(getApplicationContext(),Host.class);
+        startActivityForResult(intent, REQUEST_CODE_MENU);
+    }
+    public void OnClickedLeisure(View v){
+        Intent intent = new Intent(getApplicationContext(),Item_list.class);
+        startActivityForResult(intent, REQUEST_CODE_MENU);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE_MENU){
+            Toast.makeText(getApplicationContext(),"onActivityResult 메소드 호출됨"+requestCode+"결과코드"+resultCode,Toast.LENGTH_LONG).show();
+        }
+
+        if(resultCode == RESULT_OK){
+            String name = data.getExtras().getString("name");
+            Toast.makeText(getApplicationContext(),"응답 전달된 name"+name,Toast.LENGTH_LONG).show();
+
         }
     }
 
